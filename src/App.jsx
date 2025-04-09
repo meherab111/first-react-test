@@ -1,7 +1,18 @@
-export const App = () => {
-
+export const App = () => { //component
+// <> </> is the shorthand of Fragment
+//
   return (
-  <div>
+    <> 
+    <MultipleCards />
+    <MultipleCards />
+    <MultipleCards />
+    </>
+  )
+}
+
+const MultipleCards = () => { // component
+  return (
+    <div>
     <img src="squid-game.webp" alt="squid-game" width="50%" height="50%"/>
     <h1>Name: Squid Game - 2</h1>
     <h2>Imdb Rating: 8/10</h2>
